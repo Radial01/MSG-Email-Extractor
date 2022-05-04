@@ -2,7 +2,7 @@
 $emailPattern = "([a-zA-Z0-9_\-\.]+)@gmail.com"
 $msgDirectory = "C:\msgFiles"
 
-# Parse .msg files, extracting email addresses that match the regex specified above.
+# Parse .msg files, extracting email addresses matching the regex specified above.
 # Matches are placed in temp.txt.
 $Outlook = New-Object -ComObject Outlook.Application
 Get-ChildItem $msgDirectory -Filter *.msg |
