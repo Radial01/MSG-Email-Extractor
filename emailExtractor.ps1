@@ -1,4 +1,4 @@
-# Modify email pattern to match the email address for which you are searching.
+# Modify the email pattern to match the email address for which you are searching.
 $emailPattern = "([a-zA-Z0-9_\-\.]+)@gmail.com"
 $msgDirectory = "C:\msgFiles"
 
