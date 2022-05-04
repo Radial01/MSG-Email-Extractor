@@ -15,7 +15,7 @@ Get-ChildItem $msgDirectory -Filter *.msg |
         }
     }
 
-# Remove duplicate Entries from temp.txt and then remove temp.txt itself.
+# Remove duplicate entries from temp.txt and then remove temp.txt itself.
 $hash = @{}
 Get-Content -Path .\temp.txt | %{if($hash.$_ -eq $null) { $_ }; $hash.$_ = 1} > "List.txt"
 Remove-Item -Path .\temp.txt -Force
